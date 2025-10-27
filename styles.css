@@ -1,0 +1,24 @@
+:root{
+  --bg:#e9f4ff; --card:#ffffff; --muted:#556; --accent:#1f76d1; --accent2:#0b8a44;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial;background:var(--bg);color:#102a43}
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 28px}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent2),#2db57a);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800}
+.topnav a{margin-left:12px;color:var(--muted);text-decoration:none;font-weight:600}
+.container{max-width:980px;margin:18px auto;padding:0 16px}
+.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 24px rgba(16,42,67,0.06);margin-bottom:14px}
+h2{margin:0 0 8px 0}
+.lead{color:var(--muted)}
+.buttons{margin-top:12px;display:flex;gap:10px}
+.btn{padding:8px 12px;border-radius:8px;border:none;cursor:pointer;background:transparent;color:var(--accent);font-weight:700}
+.btn.primary{background:var(--accent);color:#fff}
+.links li{margin:8px 0}
+.footer{text-align:center;padding:18px;color:var(--muted)}
+/* popup */
+#popup-box{position:fixed;right:20px;top:-200px;width:220px;height:110px;background:var(--card);box-shadow:0 12px 30px rgba(2,6,23,0.08);border-radius:10px;padding:12px;display:flex;flex-direction:column;justify-content:space-between;transition:top .45s,opacity .3s;opacity:0;z-index:9999}
+#popup-box.show{top:22px;opacity:1}
+.p-actions{display:flex;gap:8px;justify-content:flex-end}
+.small.muted{color:var(--muted);font-size:13px}
+@media(max-width:720px){.topnav{display:none}}
